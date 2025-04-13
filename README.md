@@ -1,9 +1,10 @@
-# COMP4037-diet-visualization
-Interactive Dash App comparing environmental impacts of diet types (COMP4037)
-The dashboard visualizes the environmental impacts of different dietary groups using a Parallel Coordinates Plot, allowing for multivariate comparison across 8 key environmental indicators.
-Features
+COMP4037-diet-visualization
+Interactive Dash App showing the comparison of environmental impacts of different diet types (COMP4037)
 
-- Interactive filters for sex and age group
+The dashboard visualizes the environmental impacts of each dietary group using Parallel Coordinates Plot which provides a multivariate comparison of 8 key indicators of the environment.
+
+Features:-
+- Interactive filters for **sex** and **age group**
 - Multivariate comparison across 8 environmental variables:
   - Greenhouse Gas Emissions
   - Land Use
@@ -15,25 +16,25 @@ Features
   - Agricultural Water Use
 - Color-coded diet group representation
 - Hover details for subgroup analysis
-- Built using Dash,Plotly, and Pandas
+- Built using **Dash**, **Plotly**, and **Pandas**
 
-Files Included
-interactive_diet_visualizer_corrected_FINAL.py Main Dash application script                      
-normalized_diet_data.csv                Preprocessed dataset using Min-Max normalization 
+Files Included:-
+- interactivedietvisualizercorrectedFINAL.py Main application script of Dash.
+- normalizeddietdata.csv Preprocessed dataset created through Min-Max normalization.
 
-Dataset Conversion (Normalization)
-
-The original dataset was transformed by:
+Dataset conversion (normalization)
+Accomplished through:
 - Grouping by diet_group
-- Selecting key environmental metrics
-- Applying **Min-Max scaling** to bring all values to a 0–1 range
+- Selecting key dimensions of the environment.
+- All values were normalized with Min-Max scaling to fall within the value range of 0-1.
 
- How to Run the App
+How to run the app
 
-### 1. Install dependencies
-```bash
+1. Install dependencies
+``` bash
 pip install dash plotly pandas
-Run python interactive_diet_visualizer_corrected_FINAL.py
-Visit http://127.0.0.1:8050 in your browser.
 
+python interactivedietvisualizercorrectedFINAL.py
+```
 
+Go to your browser and navigate to the address http://127.0.0.1:8050.
